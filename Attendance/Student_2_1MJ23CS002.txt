@@ -1,0 +1,3 @@
+Name: Student_2
+USN: 1MJ23CS002
+Attendance Marked

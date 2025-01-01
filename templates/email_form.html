@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Gmail</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            max-width: 400px;
+            width: 90%;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #f9f9f9;
+        }
+        input[type="email"] {
+            padding: 10px;
+            margin: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: none;
+        }
+        input[type="submit"] {
+            background: #34eb86;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background: #2fb872;
+            transform: scale(1.05);
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.8rem;
+            color: #f9f9f9;
+        }
+        footer a {
+            color: #34eb86;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Your Gmail</h1>
+        <form action="/submit_email" method="POST">
+            <input type="email" name="email" placeholder="Enter your Gmail address" required><br><br>
+            <input type="hidden" name="name" value="{{ name }}">
+            <input type="hidden" name="usn" value="{{ usn }}">
+            <input type="hidden" name="filename" value="{{ filename }}">
+            <input type="hidden" name="img_path" value="{{ img_path }}">
+            <input type="submit" value="Send Attendance Email">
+        </form>
+        <footer>
+            Developed with ❤️ by <a href="#">Your Name</a>
+        </footer>
+    </div>
+</body>
+</html>
