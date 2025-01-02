@@ -37,7 +37,7 @@ This repository implements a real-time **Face Detection and Eye Blink Detection 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/face-eye-blink-detection.git
+   https://github.com/AlphaDweb/eye-detection.git
    cd Face-Eye-Blink-Detection
    ```
 
